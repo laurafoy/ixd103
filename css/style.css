@@ -33,10 +33,19 @@ header h1 {
 
 }
 
+.wordmark {
+  padding-top: 12em;
+  width: 40%;
+  padding-bottom: 4em;
+}
+
+.intro {
+  padd
+}
+
 /*-----BACKGROUNDS-----*/
 .background-colour {
   width: 100%;
-  padding: 2.5em 0;
   background: #E6E6E6;
   padding-bottom: 15em
 
