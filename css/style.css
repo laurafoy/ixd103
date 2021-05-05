@@ -1,0 +1,251 @@
+/*-----UNIVERSAL STYLING------*/
+body {
+  color: #333;
+  background-color: #E6E6E6;
+  font-family: bio-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  }
+
+section, header {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  max-width: 1150px;
+  color: #333333;
+}
+
+header h1 {
+  margin: 1em 0;
+  font-size: 5.2em;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-left: .2em;
+}
+
+.header_img {
+  float: right;
+  padding-top: -100px;
+  padding-right: -1000px;
+
+}
+
+/*-----BACKGROUNDS-----*/
+.background-colour {
+  width: 100%;
+  padding: 2.5em 0;
+  background: #E6E6E6;
+  padding-bottom: 15em
+
+}
+
+.background-colour h2 {
+  color: #F8E8CE;
+}
+
+/*---TYPOGRAPHY---*/
+
+h1, h2 {
+  font-family: asphalt, sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+/*---ESTABLISH TYPE HIERARCHY BASED ON FONT CHOICES---*/
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 1em 0;
+  color: #333333;
+}
+
+p{
+  font-family: bio-sans, sans-serif;
+font-weight: 600;
+font-style: normal;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+
+}
+
+
+section {
+padding-bottom: 3em;
+}
+
+
+/*-----STYLING LINKS----*/
+
+a{
+  color: #1ac15e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #178142;
+  border-bottom: 1px dotted;
+}
+
+.background-colour a:hover {
+  color: #F8E8CE;
+}
+/*----NAVIGATION-----*/
+
+nav{
+top: 0;
+left: 0;
+background: rgb(164,99,217);
+background: linear-gradient(37deg, rgba(164,99,217,1) 0%, rgba(72,170,213,1) 100%);
+font-family: asphalt, sans-serif;
+font-weight: 800;
+font-style: normal;
+font-size: 1.5em;
+margin: 0;
+width: 100%;
+padding: .5em 0;
+}
+
+nav ul {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 20px;
+  background: none;
+  padding-left: -20vw
+}
+
+nav a:link {
+  color: #333333;
+}
+
+nav a:visited {
+  color: #333333;
+}
+
+nav a:hover {
+  border-bottom: none;
+  color: #ff65a2;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlink {
+  margin-top: 0
+
+}
+
+.logo {
+  margin-top: 0.2em;
+  margin-bottom: auto;
+  width: 30%;
+  font-size: 2em;
+  align:
+  text-align: left;
+  text-transform: none;
+  padding-right: 50vw;
+  padding-left: 5vw;
+  display: inherit;
+}
+
+/*----IMAGES-----*/
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+/*-----PORTFOLIO----*/
+
+.portfolio {
+  max-width: 850px;
+  margin: auto;
+  padding: 40px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
+.portfolio h1 {
+  text-align: center;
+}
+
+li {
+  position: relative;
+}
+
+/*--------FOOTER------*/
+
+footer {
+  text-align: center;
+  font-size: 0.707em;
+  padding: 3em 0 0 0;
+  margin border-bottom: 0;
+  color: #F8E8CE;
+  background: rgb(164,99,217);
+background: linear-gradient(37deg, rgba(164,99,217,1) 0%, rgba(72,170,213,1) 100%);
+}
+
+.footer{
+  float: bottom;
+  align-items: baseline;
+  display: grid;
+  grid-gap: 620px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+
+.connections {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.connections ul {
+  margin: 0;
+  padding: 0;
+}
+
+.connections li {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.connections a:link {
+  border-bottom: none;
+}
+
+.connections img,
+.connections svg {
+  border: none
+}
+
+.connections a:hover svg path {
+  transition: all 0.3s ease-in-out
+}
+
+@media only screen and (max-width: 600px) {
+
+  section, header {
+    width: 90%;
+    margin: auto;
+  }
+
+header h1 {font-size: 3.25em}
+
+.portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr))}
+
+}
