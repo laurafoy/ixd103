@@ -23,10 +23,7 @@ header h1 {
   font-size: 4.5em;
   font-weight: bold;
   line-height: 1.2;
-  margin-left: 4em;
-  margin-top: 1em;
-  margin-bottom: 1em
-
+  margin: 2em 2em;
 }
 
 header p {
@@ -35,11 +32,21 @@ header p {
   font-family: bio-sans, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.5;
-  margin-left: 12em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
+
+}
+
+.wordmark {
+  /* margin: 8em 14em; */
+  margin-top:10em;
+  margin-left:14em;
+  margin-bottom: 2.5em;
+  margin-right: 0;
+
+  width: 35%;
 }
 
 .header_img {
@@ -50,10 +57,12 @@ header p {
 
 }
 
+/*-----BACKGROUNDS-----*/
 .background-colour {
   width: 100%;
   padding: 2.5em 0;
   background: #E6E6E6;
+  padding-bottom: 10em
 
 }
 
@@ -77,9 +86,8 @@ h1 {
 }
 
 h2 {
-  font-size: 4em;
-  margin: 1em 4.5em;
-  margin-bottom: 1em;
+  font-size: 3em;
+  margin: 1em 0;
   color: #333333;
 }
 
@@ -89,8 +97,7 @@ font-weight: 600;
 font-style: normal;
   font-size: 1.5em;
   line-height: 1.5;
-  margin-bottom: 2em;
-  margin-left: 12em;
+  margin-bottom: 1em;
 
 }
 
@@ -181,7 +188,7 @@ nav a:hover {
 img {
   display: block;
   margin: auto;
-  max-width: 100%;
+  max-width: 60%;
 }
 
 .top_img_section {
@@ -193,23 +200,6 @@ img {
   top:-40px;
   right:0px;
   width: 500px
-}
-
-.identity-img {
-  max-width: 1025px;
-  padding-top:3em;
-  margin-bottom: 4em;
-}
-
-.colours-img {
-  max-width: 1300px;
-  padding-top: 2em;
-  margin-bottom: 8em
-}
-
-.fish-img {
-  max-width: 500px;
-  padding-top: 10em
 }
 
 
@@ -232,30 +222,32 @@ img {
 /*-----Text coloring end----*/
 
 
-/*-----VALUES SECTION----*/
+/*-----PORTFOLIO----*/
 
 .portfolio {
+  max-width: 850px;
   margin: auto;
+  padding: 40px 0;
   display: grid;
-  padding-left: 18em;
-  grid-gap: 200px;
+  grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
 
-.values h1 {
+.portfolio h1 {
   text-align: center;
 }
 
-
-
-.values-img {
-  max-width: 500px;
+li {
+  position: relative;
 }
 
-.butterfly-img {
-  max-width: 400px;
-  padding-top: -10em
-
+.portfolio_text {
+  max-width: 850px;
+  margin: auto;
+  /* padding: 40px 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
 }
 
 .portfolio_text h1 {
@@ -285,22 +277,19 @@ footer {
   background: linear-gradient(37deg, rgba(164,99,217,1) 0%, rgba(72,170,213,1) 100%);
 }
 
-
 .footer_images{
   float: bottom;
   display: flex;
 }
 
 .img_bottom_left{
-  max-width: 300px;
   margin-bottom: 0;
-  margin-left: 3em;
+  margin-left: 0;
 }
 
 .img_bottom_right{
-  max-width: 300px;
   margin-bottom: 0;
-  margin-right: 3em;
+  margin-right: 0;
 }
 .connections {
   float: bottom;
@@ -349,3 +338,5 @@ footer {
 header h1 {font-size: 3.25em}
 
 .portfolio {grid-template-columns: repeat(2, minmax(150px, 1fr))}
+
+}
